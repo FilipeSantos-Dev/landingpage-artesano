@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #000;
+  color: #f2f2f2;
+}
+ 
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 0, 0, 0.55), rgba(0,0,0,0.75)),
+    url('img/hero-atelie.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+ 
+.hero-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding: 0 20px;
+}
+ 
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 300;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+ 
+.hero-tags {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.85rem;
+  font-weight: 100;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  background-color: rgba(205, 205, 205, 0.252);
+  padding: 7px;
+}
+ 
+.hero-tags .line {
+  width: 50px;
+  height: 1px;
+  background-color: rgba(255,255,255,0.5);
+}
+ 
+.hero-tags .dot {
+  color: rgba(255,255,255,0.5);
+}
+ 
+.hero-sub {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #cfcfcf;
+}
+ 
+.hero-year {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  color: #cfcfcf;
+}
+ 
+.hero-year .dash {
+  margin: 0 8px;
+  color: rgba(255,255,255,0.6);
+}
+ 
+/* NAV */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #ffffff;
+  padding: 22px 10px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+ 
+.main-nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px 4px;
+  transition: color 0.2s ease;
+}
+ 
+.main-nav a:hover {
+  color: #ffffff;
+}
+ 
+.main-nav a.active {
+  border: 1px solid #fff;
+  padding: 6px 14px;
+}
+ 
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.4rem;
+    letter-spacing: 8px;
+  }
+ 
+  .hero-tags {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+ 
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}
+ 
